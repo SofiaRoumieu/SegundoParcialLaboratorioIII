@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Parcial</title>
+    <script src="./Vehiculo.js"></script>
+    <script src="./Auto.js"></script>
+    <script src="./Camioneta.js"></script>
+    <script src="./Funciones.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="divContenedor">
+        <input type="button" id="btnNuevoVehiculo" value="Nuevo Vehiculo">
+    </div>
+    <div class="divContenedor">
+        <div id="divGrilla">
+            <div>
+                <label>Columnas visibles:</label>
+            </div>
+            <div>
+                <label for="chkId">Id</label><input type="checkbox" id="chkId">
+                <label for="chkMarca">Marca</label><input type="checkbox" id="chkMarca">
+                <label for="chkModelo">Modelo</label><input type="checkbox" id="chkModelo">
+                <label for="chkPrecio">Precio</label><input type="checkbox" id="chkPrecio">
+            </div>
+        </br>
+            <div>
+                <div>
+                    <label for="inpPromedio">Promedio de Precio:</label>
+                </div>
+                <div style="width: 50%;">
+                    <input type="text" id="inpPromedio" disabled>
+                </div>
+                <div>
+                    <input id='btnPromediar' type="button" value='Promediar Precio'>
+                </div>
+            </div>
+        </br>
+            <div>
+                <label for="inpFiltro">Filtro de búsqueda(por marca):</label>
+            </div>
+            <div>
+                <input type="text" id="inpFiltro">
+            </div>
+            <h2>Listado de Vehiculos ingresados</h2>
+            <table id="tablaVehiculos">
+                <thead>
+                    <tr>
+                        <th id="thId">Id</th>
+                        <th id="thMarca">Marca</th>
+                        <th id="thModelo">Modelo</th>
+                        <th id="thPrecio">Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyVehiculos">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="divPopUp" hidden>
+
+        <div id="divCabeceraPopUp">
+            <h2>Datos del Vehiculo</h2>
+        </div>
+
+        <div id="divFormularioPopIp">
+            <div>
+                <div class="carga">
+                    <label for="inpMarca">Marca:</label>
+                </div>
+                <div class="carga">
+                    <input type="text" id="inpMarca">
+                </div>
+                <div class="carga">
+                    <label for="inpModelo">Modelo:</label>
+                </div>
+                <div class="carga">
+                    <input type="text" id="inpModelo">
+                </div>
+                <div class="carga">
+                    <label for="inpPrecio">Precio:</label>
+                </div>
+                <div class="carga">
+                    <input type="number" id="inpPrecio">
+                </div>
+                <div class="carga">
+                    <label for="inpTipoVehiculo">Tipo:</label>
+                </div>
+                <select class="carga" id="inpTipoVehiculo">
+                    <option value="">Seleccione un tipo</option>
+                    <option value="Auto">Auto</option>
+                    <option value="Camioneta">Camioneta</option>
+                </select>
+                <div id="divAuto" hidden>
+                    <div class="carga">
+                        <label for="inpCantPuertas">Cantidad de Puertas:</label>
+                    </div>
+                    <div class="carga">
+                        <input type="number" id="inpCantPuertas">
+                    </div>
+                </div>
+                <div id="divCamioneta" hidden>
+                    <div class="carga">
+                        <label for="chkCuatroXCuatro">Es cuatro por cuatro:</label>
+                    </div>
+                    <div class="carga">
+                        <input type="checkbox" id="chkCuatroXCuatro">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divFooterPopUp">
+            <input class="btnPopUp" id='btnGuardar' type="button" value='Guardar'>
+            <input class="btnPopUp" id="btnCancelar" type="button" value="Cancelar">
+        </div>
+    </div>
+    
+
+</body>
+</html>

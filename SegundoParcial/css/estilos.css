@@ -1,0 +1,81 @@
+body{
+    background-color: rgba(212, 225, 240, 0.274);
+}
+
+.divContenedor{
+    background-color: rgba(45, 126, 218, 0.411);
+    border-radius: 5px;
+    margin: 2px;
+}
+
+h2{
+    margin: 5px;
+    padding-top: 15px;
+}
+
+#tablaVehiculos{
+    width: 100%;
+    margin-top: 0px;
+    vertical-align: center;
+    border-radius: 5px;
+    font: center; 
+    padding:10px;
+    position: relative;  
+    text-align: center;  
+    border:0.5;
+}
+
+thead{
+    height: 50px;
+    font-size: 18px;
+    background-color: rgba(45, 126, 218, 0.411);
+}
+
+tbody{
+    background-color: rgb(212, 225, 240);
+    
+}
+
+h2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+label{
+    margin-left:20px;
+}
+
+.carga input,input[type="text"], select{
+    width: 50%;
+    margin:5px 20px;
+    background-color: rgb(212, 225, 240);
+}
+
+#btnGuardar, #btnNuevoVehiculo, #btnPromediar{
+    margin: 15px;
+    background-color: rgba(45, 126, 218, 0.411);
+    color: black;
+    border-radius: 10px;
+    height: 25px;
+}
+
+#btnCancelar{
+    margin: 15px;
+    background-color: rgba(245, 9, 9, 0.932);
+    color: black;
+    border-radius: 10px;
+    height: 25px;
+}
+
+#divPopUp{
+    position: absolute;
+    width: 50%;
+    height: 55%;
+    top: 25%;
+    left: 25%;
+    background-color: rgb(110, 175, 248);
+    border-radius: 10px;
+    border:solid,rgb(4, 58, 121) ,5px;
+    
+    min-height: 300px;
+}
